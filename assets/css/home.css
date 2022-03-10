@@ -12,6 +12,34 @@
    background-position: right;
  
 }
+.top_arrow.animated{
+    opacity: 1;
+    transition: 0.2s;
+}
+.top_arrow{
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+    left: 90%;
+    margin-top: -25px;
+    transform: rotate(45deg);
+    
+text-align: center;
+ 
+ border-top-left-radius: 25px;
+  
+ 
+ 
+ 
+
+}
+.arrow{
+margin-top: 15px;
+transform: rotate(315deg);
+color: white;
+}
 .home_row::after{
     position: absolute;
     width: 50px;
@@ -104,6 +132,7 @@
 }
 .footer_clm p{
     font-size: 1.1rem;
+    padding: 0 20px 0 0;
 }
 .footer_clm{
     text-align: left;
@@ -142,6 +171,13 @@
     font-size: 1.5rem;
     margin: 10px 0 50px 0;
 }
+ .text_div{
+     opacity: 0;
+ }
+ .text_div.animated{
+     opacity: 1;
+ }
+ 
 .bottom_dnd{
     width: 100%;
     height: auto;
@@ -166,5 +202,9 @@
     position: relative;
     width: 60vw;
   margin-top: 100px;
+  opacity: 0;
      
+}
+.home_col_2.animated{
+    opacity: 1;
 }
