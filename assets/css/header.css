@@ -1,23 +1,17 @@
  
- html {
-  scroll-behavior: smooth;
-  overflow-x: hidden ;
-}
 
 :root{
     --yellow: #FDDE56;
-    --pink: #ffadc4; 
-    --text-color: #000000;
+    --pink: #ffadc4;
+    --text-color: #393E46;
     --white-text: #ffffff;
     --home-color:  #2C024D;
-    --main-bg: rgb(202, 148, 0);
 
 }
 
  
-
 *{
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-decoration: none;
@@ -30,7 +24,7 @@
     color:#fff;
 }
 
-  
+ 
 /* css of header  */
 a,
 button {
@@ -66,7 +60,7 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .nav-con {
-    margin: 0;
+    margin: 0 auto;
     /* padding: 0 2rem; */
   }
 }
@@ -88,7 +82,7 @@ button {
   width: 100%;
   height: auto;
   z-index: 999;
-  margin: 0;
+  margin: 0 auto;
  
 
 }
@@ -97,7 +91,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 0.75rem 0;
 }
