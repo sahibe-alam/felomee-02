@@ -8,9 +8,10 @@
 :root{
     --yellow: #FDDE56;
     --pink: #ffadc4;
-    --text-color: #393E46;
+    --text-color: #000000;
     --white-text: #ffffff;
     --home-color:  #2C024D;
+    --main-bg: rgb(202, 148, 0);
 
 }
 
