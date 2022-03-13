@@ -1,13 +1,16 @@
+ 
  body{
-   /* background-color: #393E46; */
+  font-family: 'Poppins', sans-serif !important;
+
  }
  html {
   scroll-behavior: smooth;
+  overflow-x: hidden ;
 }
 
 :root{
     --yellow: #FDDE56;
-    --pink: #ffadc4;
+    --pink: #ffadc4; 
     --text-color: #000000;
     --white-text: #ffffff;
     --home-color:  #2C024D;
@@ -15,10 +18,7 @@
 
 }
 
-html{
-     
-     overflow-x: hidden;
-}
+ 
 
 *{
     font-family: 'Poppins', sans-serif;
