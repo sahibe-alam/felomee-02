@@ -54,7 +54,7 @@ button {
 .nav-con {
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0 1rem;
   color: #f7f5f5;
 }
@@ -82,7 +82,7 @@ button {
   width: 100%;
   height: auto;
   z-index: 999;
-  margin: 0 auto;
+  margin: 0;
  
 
 }
@@ -91,7 +91,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   padding: 0.75rem 0;
 }
@@ -137,7 +137,7 @@ button {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  overflow-y: auto;
+  /* overflow-y: ; */
   visibility: hidden;
   background: var(--color-white);
   box-shadow: var(--shadow-medium);
@@ -175,7 +175,7 @@ button {
 @media only screen and (min-width: 768px) {
     
   .header .menu-block {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 .header .menu-item {
