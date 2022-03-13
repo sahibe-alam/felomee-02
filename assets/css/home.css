@@ -1,5 +1,5 @@
 .home_row{
-   
+    position: relative;
     width: 100%;
     height: auto;
     padding: 0% 50px 20px 50px;
@@ -38,7 +38,7 @@ margin-top: 15px;
 transform: rotate(315deg);
 color: white;
 }
-/* .home_row::after{
+.home_row::after{
     position: absolute;
     width: 50px;
     height: 50px;
@@ -55,7 +55,7 @@ color: white;
     background-color: #2C024D;
     border-bottom-right-radius: 20px;
     z-index: 1;
-} */
+}
  .its_words{
      text-align: center;
      justify-items: center;
