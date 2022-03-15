@@ -13,7 +13,38 @@
  
 }
 
- 
+ .mobile{
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     text-align: left;
+     align-items: center;
+     padding: 0 100px;
+     width: 100%;
+     min-height: 100vh;
+     background-color: bisque;
+
+ }
+ .mob{
+     width: 40vw;
+ }
+ .head-scroll{
+     font-size: 3.5rem;
+ }
+ .tex{
+     width: 60vw;
+ }
+ .mob img{
+     transform: rotate(90deg);
+     width: 250px;
+     position: absolute;
+     left: -150px;
+     bottom: -0px;
+ }
+ .tex{
+     color: rgb(37, 37, 37);
+     font-size: 1.1rem;
+ }
 .top_arrow{
    
     width: 50px;
@@ -152,6 +183,10 @@ color: white;
     transition:0.6s;
     
 
+}
+.screen{
+    width: 300px;
+    padding-bottom: 20px;
 }
 .copright_div{
     text-align: center;

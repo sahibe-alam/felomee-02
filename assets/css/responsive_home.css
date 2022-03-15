@@ -30,6 +30,18 @@
 
          
     }
+    .mobile{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        min-height: 100vh;
+        background-color: bisque;
+   
+    }
      
     .home_col_1{
         position: relative;
@@ -87,6 +99,7 @@
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 20px;
     padding: 50px 30px 50px 30px;
+   
 }
 }
 

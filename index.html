@@ -12,6 +12,8 @@
     <!-- animate css link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/responsive_home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +74,7 @@
         <div class="bottom_dnd">
             <div class="text_div">
                 <h1 class="dnd_tage">Download our app</h1>
-                <p>Discover exclusive deals and discounts with our mobile experience.</p>
+                <p class="desc_download">Discover exclusive deals and discounts with our mobile experience.</p>
             </div>
             <div class="dnd_button">
                 <div class="android">
@@ -81,6 +83,17 @@
                 <div class="ios">
                     <img src="assets/images/ios-badge.png" alt="" width="100%">
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mobile">
+            <div class="mob">
+                <img class="screen" src="assets/images/mobile1.svg" alt="" width="100%">
+            </div>
+            <div class="tex">
+                <h1 class="head-scroll">Over A Million Questions In One Place, With Over One TB Of Reading
+                    Material To Explore.</h1>
             </div>
         </div>
     </section>
@@ -134,10 +147,64 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- animate js link  -->
     <script src="assets/js/scroll_animate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    
+    
     <!-- custim js link  -->
     <script src="assets/js/scripte.js"></script>
+    <script>
+      
+        gsap.timeline({
+            scrollTrigger:{
+                trigger: ".its_words",
+                start: "center center",
+                end: "bottom top",
+                scrub: true,
+                markers: true,
+                pin: true
+
+            }
+        })
+        .from(".its_words", { x : innerWidth * 1})
+
+        gsap.timeline({
+            scrollTrigger:{
+                trigger: ".bottom_dnd",
+                start: "center center",
+                end: "bottom top",
+                scrub: true,
+                markers: true,
+                pin: true
+
+            }
+        })
+        .from(".dnd_tage", { x : innerWidth * -1})
+        .from(".desc_download", { x : innerWidth * 1})
+        .from(".dnd_button", { y : innerHeight * 1})
+
+
+        gsap.timeline({
+            scrollTrigger:{
+                trigger: ".mobile",
+                start: "center center",
+                end: "bottom top",
+                scrub: true,
+                markers: true,
+                pin: true
+
+            }
+        })
+      .to(".screen",{
+x: 400,
+rotation: 360,
+ duration: 6
+
+      })
+      .from( ".tex", {
+          x : innerWidth * 1,
+          duration: 6
+        })
+    </script>
 </body>
 
 </html>
